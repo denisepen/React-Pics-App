@@ -10,7 +10,6 @@ class App extends Component {
 
   onSearchSubmit = async (term) => {
 
-
     const response = await unsplash.get('/search/photos', {
       params: { query: term },
     })
